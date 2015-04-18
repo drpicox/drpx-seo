@@ -1,0 +1,22 @@
+{
+  "name": "drpx-seo",
+  "version": "1.0.0",
+  "homepage": "https://github.com/drpicox/drpx-seo",
+  "authors": [
+    "David Rodenas Pico <david.rodenas@gmail.com>"
+  ],
+  "description": "A simple tool to enable SEO in AngularJS apps",
+  "main": "drpx-seo.js",
+  "keywords": [
+    "angular",
+    "seo"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

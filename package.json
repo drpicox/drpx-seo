@@ -1,0 +1,24 @@
+{
+  "name": "drpx-seo",
+  "version": "1.0.0",
+  "description": "A simple tool to enable SEO in AngularJS apps",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/drpicox/drpx-seo"
+  },
+  "keywords": [
+    "angular",
+    "seo",
+    "angularjs"
+  ],
+  "author": "David Rodenas <david.rodenas@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/drpicox/drpx-seo/issues"
+  },
+  "homepage": "https://github.com/drpicox/drpx-seo"
+}
