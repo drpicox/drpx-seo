@@ -125,3 +125,23 @@ Use in your urls the `!` fragment:
 ```html
     <a href="#!/posts">Posts</a>
 ```
+
+
+Alternative setup (browserify)
+------------------------------
+
+If you are using `browserify`, you can do the following:
+
+```bash
+    $ npm install --save drpx-seo
+```
+
+and require the module in your app:
+
+```javascript
+    angular.module('yourApp',[
+        require('drpx-seo').name,
+    ]);
+```
+
+
