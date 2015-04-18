@@ -34,6 +34,8 @@ SOFTWARE.
 
 	// relevant properties for metas and title
 	var properties = ['title','description','keywords'];
+	// original values for each property
+	var originals = {};
 
 	// Configures $location to use hashPrefix (escaped_fragment)
 	locationConfig.$inject = ['$locationProvider'];
@@ -62,8 +64,9 @@ SOFTWARE.
 		function resolve(ev, current) {
 			var context = angular.extend({}, current.params, current.locals);
 
-			angular.forEach(properties, function(property) {
+			angular.forEach(properties, function(property) {				
 				var expr = current[property];
+				context.original = originals[property];
 				if (expr) {
 					current[property] = $interpolate(expr)(context);
 				}
@@ -84,6 +87,7 @@ SOFTWARE.
 		function link(scope, element) {
 			var original = element.text();
 
+			originals.title = original;
 			scope.$watch(function() {
 				return $route.current && $route.current.title;
 			}, function(newTitle) {
@@ -110,6 +114,7 @@ SOFTWARE.
 			if (i === l) { return; }
 
 			original = attrs.content;
+			originals[name] = original;
 			scope.$watch(function() {
 				return $route.current && $route.current[name];
 			}, function(newContent) {
