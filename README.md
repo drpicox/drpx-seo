@@ -65,8 +65,8 @@ Make sure that you have at least the following tags inside `<head>`:
 
 Enable in google web master tools ( https://www.google.com/webmasters ), in Crawl > Url Parameters, _escaped_fragment_ to crawl **every page**.
 
-![Google Web Master Tools Crawl](./gmt-crawl.png)
-![Google Web Master Tools Parameters](./gmt-urlparameters.png)
+![Google Web Master Tools Crawl](./wmt-crawl.png)
+![Google Web Master Tools Parameters](./wmt-urlparameters.png)
 
 
 
