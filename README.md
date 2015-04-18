@@ -101,11 +101,13 @@ For each route, add a pesonalized title, description and keywords:
             post: 'PostResolver',
         },
         templateUrl: 'post.tpl.html',
-        title: 'My Web - {{post.title}}',
+        title: '{{original}} - {{post.title}}',
         description: '{{post.description}}',
-        keywords: '{{post.tags.join(",")}},awesome,myweb,post',
+        keywords: '{{post.tags.join(",")}},awesome,myweb,post,{{postId}}',
     });
 ```
+
+  Note: in interpolation you can use: resolved values, url parameters, or _original_ to reference the original value present in html.
 
 - Example 3, use page controller to modify current route:
 
